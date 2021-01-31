@@ -11,7 +11,7 @@ const ListImages = async (url)=>{
     let nameComic,nameChapter;
     let options = {
         method:"get",
-        uri:url,
+        uri:"http://159.69.11.81/get.php?link="+url,
         headers:{
             Referer:REFERER,
             'User-Agent': listUserAgent[Math.floor(Math.random()*listUserAgent.length)]
